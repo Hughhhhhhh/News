@@ -7,6 +7,7 @@
 //
 
 #import "HgNews.h"
+#import "HgHeadlinesRequest.h"
 
 @implementation HgNews
 
@@ -22,34 +23,22 @@
 
 + (void)requestData:(NSString *)num success:(void (^)(NSArray *group))success{
     
-    NSDictionary *parameters = @{@"page" : num};
-    
-    AFHTTPSessionManager* manager = [AFHTTPSessionManager manager];
-    
-    manager.responseSerializer.acceptableContentTypes= [NSSet setWithObject:@"application/json"];
-    
-    manager.requestSerializer.timeoutInterval=5.0f;
-    
-    [manager GET:@"http://interview.jbangit.com/news" parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        NSMutableArray *arrayM = [NSMutableArray array];
-        
-        NSArray *included = responseObject[@"data"];
-        
-        NSString * total_count = responseObject[@"total_count"];
-        
-        [NSObject saveObj:total_count withKey:@"total_count"];
-        
-        for (NSDictionary *dict in included){
-            HgNews * model = [[HgNews alloc] initWithDict:dict];
-            [arrayM addObject:model];
+    [HgHeadlinesRequest getNewsListWithPage:num block:^(NSString *msg, id responseData) {
+        if ([msg isEqualToString:@"0"]) {
+            NSMutableArray *arrayM = [NSMutableArray array];
+            
+            NSArray *included = responseData[@"data"];
+            
+            NSString * total_count = responseData[@"total_count"];
+            
+            [NSObject saveObj:total_count withKey:@"total_count"];
+            
+            for (NSDictionary *dict in included){
+                HgNews * model = [[HgNews alloc] initWithDict:dict];
+                [arrayM addObject:model];
+            }
+            success(arrayM.copy);
         }
-        success(arrayM.copy);
-        
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"失败");
     }];
 }
 

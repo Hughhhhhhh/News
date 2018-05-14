@@ -23,4 +23,14 @@
     }];
 }
 
++(void)getNewsListWithPage:(NSString *)page block:(void (^)(NSString * msg,id responseData))complete{
+    NSDictionary *parameters = @{@"page" : page};
+    [self getURL:HgNewsList parameters:parameters completionHandler:^(id responseObject) {
+        if (complete) {
+            complete([self resultCode:responseObject],[self resultAllData:responseObject]);
+            NSLog(@"%@",responseObject);
+        }
+    }];
+}
+
 @end

@@ -20,5 +20,6 @@
 + (NSString *)resultMessage:(id)responseObject;
 + (id)resultData:(id)responseObject;
 + (NSString *)resultCode:(id)responseObject;
++ (id)resultAllData:(id)responseObject;
 
 @end

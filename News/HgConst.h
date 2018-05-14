@@ -18,6 +18,8 @@ extern NSString *const HgUserLogin;
 
 extern NSString *const HgUserNickName;
 
+extern NSString *const HgNewsList;
+
 extern NSString * TTHostURL;                   // 主地址
 extern NSString *const TTVersion_Code;              // 接口版本
 extern NSString *const TTVid;

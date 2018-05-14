@@ -69,6 +69,15 @@ static AFHTTPSessionManager *manager = nil;
     return obj;
 }
 
++ (id)resultAllData:(id)responseObject{
+    NSDictionary *dic = responseObject;
+    
+    id obj = dic;
+    if ([obj isKindOfClass:[NSNull class]]) return nil;
+    
+    return obj;
+}
+
 
 
 + (NSString *)resultMessage:(id)responseObject{
@@ -89,10 +98,11 @@ static AFHTTPSessionManager *manager = nil;
     dic = responseObject;
     
     id obj = dic[@"code"];
+    NSLog(@"%@",(NSString *)obj);
     if (nil == obj) return @"";
-    if (![obj isKindOfClass:[NSString class]]) return @"";
+    NSString * objc = [NSString stringWithFormat:@"%@",obj];
     
-    return (NSString *)obj;
+    return objc;
 }
 
 @end

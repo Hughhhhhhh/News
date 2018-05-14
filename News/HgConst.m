@@ -16,6 +16,8 @@ NSString *const HgUserLogin = @"user/login";
 
 NSString *const HgUserNickName = @"user/nickname";
 
+NSString *const HgNewsList = @"/news";
+
 NSString * TTHostURL = @"http://lf.snssdk.com/";
 NSString *const TTVersion_Code=@"6.2.6";
 NSString *const TTVid=@"3678164C-BC97-4BDE-90C3-3796BF8C39DA";

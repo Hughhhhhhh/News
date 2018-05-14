@@ -17,6 +17,12 @@
  */
 +(void)getCategoryTitles :(void (^)(NSString* msg,id responseData))complete;
 
+/**
+ * 获取新闻列表
+ *
+ *
+ */
 
++(void)getNewsListWithPage:(NSString *)page block:(void (^)(NSString * msg,id responseData))complete;
 
 @end
