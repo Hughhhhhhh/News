@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ouE-Xw-PNf" customClass="HgHeadOfMineView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onepiece" translatesAutoresizingMaskIntoConstraints="NO" id="tyV-0q-yeX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lcb-Ot-PBI">
+                    <rect key="frame" x="157" y="62" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Pzr-ok-Ufk"/>
+                        <constraint firstAttribute="height" constant="60" id="bFq-Th-XYN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8k-9t-bJ2">
+                    <rect key="frame" x="121" y="138" width="133" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="LQb-7w-ARP"/>
+                        <constraint firstAttribute="width" constant="133" id="P6z-Iu-74V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tyV-0q-yeX" secondAttribute="bottom" id="4Fu-mT-Qec"/>
+                <constraint firstItem="tyV-0q-yeX" firstAttribute="top" secondItem="ouE-Xw-PNf" secondAttribute="top" id="4oN-uh-WAg"/>
+                <constraint firstItem="Lcb-Ot-PBI" firstAttribute="centerY" secondItem="ouE-Xw-PNf" secondAttribute="centerY" id="5Wj-Fj-QGL"/>
+                <constraint firstAttribute="trailing" secondItem="tyV-0q-yeX" secondAttribute="trailing" id="Kqd-f1-VIv"/>
+                <constraint firstItem="tyV-0q-yeX" firstAttribute="leading" secondItem="ouE-Xw-PNf" secondAttribute="leading" id="Sb5-iY-226"/>
+                <constraint firstItem="h8k-9t-bJ2" firstAttribute="top" secondItem="Lcb-Ot-PBI" secondAttribute="bottom" constant="16" id="Xif-Iq-wAh"/>
+                <constraint firstItem="h8k-9t-bJ2" firstAttribute="centerX" secondItem="ouE-Xw-PNf" secondAttribute="centerX" id="v34-JG-Zl8"/>
+                <constraint firstItem="Lcb-Ot-PBI" firstAttribute="centerX" secondItem="ouE-Xw-PNf" secondAttribute="centerX" id="x9K-qb-04X"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="icon" destination="Lcb-Ot-PBI" id="0y5-Gc-2iN"/>
+                <outlet property="name" destination="h8k-9t-bJ2" id="xdt-UM-dyN"/>
+            </connections>
+            <point key="canvasLocation" x="92.5" y="-85.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="onepiece" width="818" height="506"/>
+    </resources>
+</document>
