@@ -27,6 +27,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self initLeftBtn];
+}
+
+-(void)initLeftBtn{
+    UIButton * scanBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [scanBtn setBackgroundImage:[UIImage imageNamed:@"扫一扫"] forState:UIControlStateNormal];
+    
+    scanBtn.frame = CGRectMake(0, 0, 25, 25);
+    
+    UIBarButtonItem * leftBtn = [[UIBarButtonItem alloc] initWithCustomView:scanBtn];
+    
+    self.navigationItem.leftBarButtonItem = leftBtn;
 }
 
 - (void)didReceiveMemoryWarning {

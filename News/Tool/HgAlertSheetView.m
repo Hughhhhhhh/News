@@ -52,7 +52,7 @@
         CGFloat padding=(SCREENW-16-ButtonHeight*count)/(count+1);
         for (int i = 0; i < count; i ++) {
             UIButton * button =[UIButton buttonWithType:UIButtonTypeCustom];
-            button = [[UIButton alloc]initWithFrame:CGRectMake(padding+i*(ButtonHeight+padding), 1, ButtonHeight, ButtonHeight)];
+            button = [[UIButton alloc]initWithFrame:CGRectMake(padding+i*(ButtonHeight+padding), 20, ButtonHeight, ButtonHeight)];
             [alertSheetView addSubview:button];
             button.tag = i;
             [button setImage:[UIImage imageNamed:[imgArray objectAtIndex:i]] forState:0];
