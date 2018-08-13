@@ -28,7 +28,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initLeftBtn];
+//    [self initRightBtn];
+    
+//    [self initLeftBtn];
+}
+
+-(void)initRightBtn{
+    UIButton * scanBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [scanBtn setBackgroundImage:[UIImage imageNamed:@"加号"] forState:UIControlStateNormal];
+    
+//    [scanBtn setTitle:@"➕" forState:UIControlStateNormal];
+    
+    [scanBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    scanBtn.layer.cornerRadius = 5;
+    scanBtn.layer.shadowOffset =  CGSizeMake(0, 1);
+    scanBtn.layer.shadowOpacity = 0.8;
+    scanBtn.layer.shadowColor =  [UIColor blackColor].CGColor;
+    
+//    scanBtn.frame = CGRectMake(SCREENW - 40, 10, 25, 25);
+    scanBtn.frame = CGRectMake(0 , 10, 25, 25);
+    
+    self.menuView.rightView = scanBtn;
+    
+//    [scanBtn bringSubviewToFront:self.menuView];
 }
 
 -(void)initLeftBtn{
@@ -49,7 +73,7 @@
 }
 
 - (NSInteger)numbersOfChildControllersInPageController:(WMPageController *)pageController {
-    return 10;
+    return 1;
 }
 
 - (NSString *)pageController:(WMPageController *)pageController titleAtIndex:(NSInteger)index {

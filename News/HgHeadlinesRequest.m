@@ -28,7 +28,6 @@
     [self getURL:HgNewsList parameters:parameters completionHandler:^(id responseObject) {
         if (complete) {
             complete([self resultCode:responseObject],[self resultAllData:responseObject]);
-            NSLog(@"%@",responseObject);
         }
     }];
 }
