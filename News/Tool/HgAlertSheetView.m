@@ -44,7 +44,7 @@
             make.left.mas_equalTo(8);
             make.right.mas_equalTo(-8);
             make.height.mas_equalTo(AlertSheetViewHeight);
-            make.top.mas_equalTo(SCREENH-AlertSheetViewHeight-8);
+            make.top.mas_equalTo(SCREENH-AlertSheetViewHeight-8-kBottomMargin);
         }];
         alertSheetView.backgroundColor = RGBA(255, 255, 255, 1);
         

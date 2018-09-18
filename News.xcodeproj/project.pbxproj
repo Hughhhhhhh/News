@@ -42,7 +42,6 @@
 		39783B28202AC82400A6798B /* HgMineInfoNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39783B26202AC82400A6798B /* HgMineInfoNameViewController.m */; };
 		39783B29202AC82400A6798B /* HgMineInfoNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39783B27202AC82400A6798B /* HgMineInfoNameViewController.xib */; };
 		39783B2D202AE0C200A6798B /* HgNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39783B2B202AE0C200A6798B /* HgNewsViewController.m */; };
-		39783B2E202AE0C200A6798B /* HgNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39783B2C202AE0C200A6798B /* HgNewsViewController.xib */; };
 		39783B6F202AEBE400A6798B /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 39783B57202AEBE400A6798B /* MASCompositeConstraint.m */; };
 		39783B70202AEBE400A6798B /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 39783B5A202AEBE400A6798B /* MASConstraint.m */; };
 		39783B71202AEBE400A6798B /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 39783B5C202AEBE400A6798B /* MASConstraintMaker.m */; };
@@ -57,13 +56,6 @@
 		3982F966209AF50000E7EE99 /* HgLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F965209AF50000E7EE99 /* HgLoginRequest.m */; };
 		3982F96A209B081B00E7EE99 /* HgSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F968209B081B00E7EE99 /* HgSettingViewController.m */; };
 		3982F96B209B081B00E7EE99 /* HgSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3982F969209B081B00E7EE99 /* HgSettingViewController.xib */; };
-		3982F97A209B102200E7EE99 /* UIViewController+WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F96E209B102200E7EE99 /* UIViewController+WMPageController.m */; };
-		3982F97B209B102200E7EE99 /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F971209B102200E7EE99 /* WMMenuItem.m */; };
-		3982F97C209B102200E7EE99 /* WMMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F973209B102200E7EE99 /* WMMenuView.m */; };
-		3982F97D209B102200E7EE99 /* WMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F975209B102200E7EE99 /* WMProgressView.m */; };
-		3982F97E209B102200E7EE99 /* WMScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F977209B102200E7EE99 /* WMScrollView.m */; };
-		3982F97F209B102200E7EE99 /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F979209B102200E7EE99 /* WMPageController.m */; };
-		3982F982209B10EF00E7EE99 /* HgHeadlinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F981209B10EF00E7EE99 /* HgHeadlinesViewController.m */; };
 		3982F9C2209C55E000E7EE99 /* FLAnimatedImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F99E209C55E000E7EE99 /* FLAnimatedImageView+WebCache.m */; };
 		3982F9C3209C55E000E7EE99 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F9A0209C55E000E7EE99 /* NSData+ImageContentType.m */; };
 		3982F9C4209C55E000E7EE99 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3982F9A2209C55E000E7EE99 /* NSImage+WebCache.m */; };
@@ -114,6 +106,38 @@
 		39CF3946204E648C008B9FD5 /* HgMineArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CF3944204E648C008B9FD5 /* HgMineArticleViewController.xib */; };
 		39CF394A204E6ECC008B9FD5 /* HgBaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CF3949204E6ECC008B9FD5 /* HgBaseNetwork.m */; };
 		39DAAADD202C413600B2A951 /* HgNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DAAADC202C413600B2A951 /* HgNews.m */; };
+		8405DD432148BCC800070E59 /* HgMusicRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD422148BCC800070E59 /* HgMusicRequest.m */; };
+		8405DD462148E5A100070E59 /* HgMusicInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD452148E5A100070E59 /* HgMusicInfoModel.m */; };
+		8405DD492148E65600070E59 /* NSDictionary+Hg.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD482148E65600070E59 /* NSDictionary+Hg.m */; };
+		8405DD4D2148EC7400070E59 /* HgMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD4B2148EC7400070E59 /* HgMusicCell.m */; };
+		8405DD4E2148EC7400070E59 /* HgMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8405DD4C2148EC7400070E59 /* HgMusicCell.xib */; };
+		8405DD512149046100070E59 /* HgSongInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD502149046100070E59 /* HgSongInfo.m */; };
+		8405DD54214A384600070E59 /* HgImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD53214A384600070E59 /* HgImageView.m */; };
+		8405DD57214A495800070E59 /* HgMusicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD56214A495800070E59 /* HgMusicDetailViewController.m */; };
+		8405DD5A214A49F700070E59 /* HgMusicTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD59214A49F700070E59 /* HgMusicTopView.m */; };
+		8405DD60214B4B4900070E59 /* TXScrollLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD5D214B4B4900070E59 /* TXScrollLabelView.m */; };
+		8405DD61214B4B4900070E59 /* UIView+TXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD5F214B4B4900070E59 /* UIView+TXFrame.m */; };
+		8405DD64214B563800070E59 /* HgMusicMidView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD63214B563800070E59 /* HgMusicMidView.m */; };
+		8405DD67214B58DD00070E59 /* HgIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD66214B58DD00070E59 /* HgIconView.m */; };
+		8405DD6A214B5AA000070E59 /* HgLrcTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD69214B5AA000070E59 /* HgLrcTableViewCell.m */; };
+		8405DD6D214B5FFB00070E59 /* HgLrcTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DD6C214B5FFB00070E59 /* HgLrcTableView.m */; };
+		841230EE21414E310071EBD3 /* HgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841230ED21414E310071EBD3 /* HgViewController.swift */; };
+		8415079C214B91E200E37CC7 /* HgMusicBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8415079B214B91E200E37CC7 /* HgMusicBottomView.m */; };
+		842E2E0721301F4700C795C6 /* HgHeadlinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842E2E0621301F4700C795C6 /* HgHeadlinesViewController.m */; };
+		842E2E0A2130206E00C795C6 /* UIColor+Hg.m in Sources */ = {isa = PBXBuildFile; fileRef = 842E2E092130206E00C795C6 /* UIColor+Hg.m */; };
+		842E2E0D2130268D00C795C6 /* HgMusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842E2E0C2130268D00C795C6 /* HgMusicListViewController.m */; };
+		84707CA5212D8879009C1B95 /* HgMusicPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CA4212D8879009C1B95 /* HgMusicPlayerManager.m */; };
+		84707CB8212D8B14009C1B95 /* UIView+ZJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CA8212D8B14009C1B95 /* UIView+ZJFrame.m */; };
+		84707CB9212D8B14009C1B95 /* UIViewController+ZJScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CAA212D8B14009C1B95 /* UIViewController+ZJScrollPageController.m */; };
+		84707CBA212D8B14009C1B95 /* ZJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CAC212D8B14009C1B95 /* ZJCollectionView.m */; };
+		84707CBB212D8B14009C1B95 /* ZJContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CAE212D8B14009C1B95 /* ZJContentView.m */; };
+		84707CBC212D8B14009C1B95 /* ZJScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CB0212D8B14009C1B95 /* ZJScrollPageView.m */; };
+		84707CBD212D8B14009C1B95 /* ZJScrollSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CB3212D8B14009C1B95 /* ZJScrollSegmentView.m */; };
+		84707CBE212D8B14009C1B95 /* ZJSegmentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CB5212D8B14009C1B95 /* ZJSegmentStyle.m */; };
+		84707CBF212D8B14009C1B95 /* ZJTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CB7212D8B14009C1B95 /* ZJTitleView.m */; };
+		84707CC2212D900F009C1B95 /* MBProgressHUD+Hg.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CC1212D900F009C1B95 /* MBProgressHUD+Hg.m */; };
+		847D4CC6212AE0DE006450BC /* HgMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D4CC5212AE0DE006450BC /* HgMusicViewController.m */; };
+		847D4CC9212AE0EC006450BC /* HgVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D4CC8212AE0EC006450BC /* HgVideoViewController.m */; };
 		ADF0B0EB16E795A9BA89A49E /* libPods-News.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA5678F3C02B00B53ADF589 /* libPods-News.a */; };
 /* End PBXBuildFile section */
 
@@ -180,7 +204,6 @@
 		39783B27202AC82400A6798B /* HgMineInfoNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HgMineInfoNameViewController.xib; sourceTree = "<group>"; };
 		39783B2A202AE0C200A6798B /* HgNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HgNewsViewController.h; sourceTree = "<group>"; };
 		39783B2B202AE0C200A6798B /* HgNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HgNewsViewController.m; sourceTree = "<group>"; };
-		39783B2C202AE0C200A6798B /* HgNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HgNewsViewController.xib; sourceTree = "<group>"; };
 		39783B56202AEBE400A6798B /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		39783B57202AEBE400A6798B /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		39783B58202AEBE400A6798B /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -213,20 +236,6 @@
 		3982F967209B081B00E7EE99 /* HgSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HgSettingViewController.h; sourceTree = "<group>"; };
 		3982F968209B081B00E7EE99 /* HgSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HgSettingViewController.m; sourceTree = "<group>"; };
 		3982F969209B081B00E7EE99 /* HgSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HgSettingViewController.xib; sourceTree = "<group>"; };
-		3982F96D209B102200E7EE99 /* UIViewController+WMPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WMPageController.h"; sourceTree = "<group>"; };
-		3982F96E209B102200E7EE99 /* UIViewController+WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WMPageController.m"; sourceTree = "<group>"; };
-		3982F970209B102200E7EE99 /* WMMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMenuItem.h; sourceTree = "<group>"; };
-		3982F971209B102200E7EE99 /* WMMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMenuItem.m; sourceTree = "<group>"; };
-		3982F972209B102200E7EE99 /* WMMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMenuView.h; sourceTree = "<group>"; };
-		3982F973209B102200E7EE99 /* WMMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMenuView.m; sourceTree = "<group>"; };
-		3982F974209B102200E7EE99 /* WMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMProgressView.h; sourceTree = "<group>"; };
-		3982F975209B102200E7EE99 /* WMProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMProgressView.m; sourceTree = "<group>"; };
-		3982F976209B102200E7EE99 /* WMScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMScrollView.h; sourceTree = "<group>"; };
-		3982F977209B102200E7EE99 /* WMScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMScrollView.m; sourceTree = "<group>"; };
-		3982F978209B102200E7EE99 /* WMPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPageController.h; sourceTree = "<group>"; };
-		3982F979209B102200E7EE99 /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
-		3982F980209B10EF00E7EE99 /* HgHeadlinesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HgHeadlinesViewController.h; sourceTree = "<group>"; };
-		3982F981209B10EF00E7EE99 /* HgHeadlinesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HgHeadlinesViewController.m; sourceTree = "<group>"; };
 		3982F99D209C55E000E7EE99 /* FLAnimatedImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImageView+WebCache.h"; sourceTree = "<group>"; };
 		3982F99E209C55E000E7EE99 /* FLAnimatedImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImageView+WebCache.m"; sourceTree = "<group>"; };
 		3982F99F209C55E000E7EE99 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -278,8 +287,6 @@
 		3990A0E9202D7F2800B4D681 /* HgNewsUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HgNewsUserViewController.h; sourceTree = "<group>"; };
 		3990A0EA202D7F2800B4D681 /* HgNewsUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HgNewsUserViewController.m; sourceTree = "<group>"; };
 		3990A0EB202D7F2800B4D681 /* HgNewsUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HgNewsUserViewController.xib; sourceTree = "<group>"; };
-		39B836EF20464B7100BA13FB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
-		39B836F020465D3900BA13FB /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = ../Macros.h; sourceTree = "<group>"; };
 		39B836F32046A1A100BA13FB /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		39B836F42046A1A100BA13FB /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		39B836F52046A1A100BA13FB /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -328,6 +335,72 @@
 		39DAAADB202C413600B2A951 /* HgNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HgNews.h; sourceTree = "<group>"; };
 		39DAAADC202C413600B2A951 /* HgNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HgNews.m; sourceTree = "<group>"; };
 		7DA5678F3C02B00B53ADF589 /* libPods-News.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-News.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8405DD412148BCC800070E59 /* HgMusicRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgMusicRequest.h; sourceTree = "<group>"; };
+		8405DD422148BCC800070E59 /* HgMusicRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicRequest.m; sourceTree = "<group>"; };
+		8405DD442148E5A100070E59 /* HgMusicInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgMusicInfoModel.h; sourceTree = "<group>"; };
+		8405DD452148E5A100070E59 /* HgMusicInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicInfoModel.m; sourceTree = "<group>"; };
+		8405DD472148E65600070E59 /* NSDictionary+Hg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Hg.h"; sourceTree = "<group>"; };
+		8405DD482148E65600070E59 /* NSDictionary+Hg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Hg.m"; sourceTree = "<group>"; };
+		8405DD4A2148EC7400070E59 /* HgMusicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgMusicCell.h; sourceTree = "<group>"; };
+		8405DD4B2148EC7400070E59 /* HgMusicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicCell.m; sourceTree = "<group>"; };
+		8405DD4C2148EC7400070E59 /* HgMusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HgMusicCell.xib; sourceTree = "<group>"; };
+		8405DD4F2149046100070E59 /* HgSongInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgSongInfo.h; sourceTree = "<group>"; };
+		8405DD502149046100070E59 /* HgSongInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgSongInfo.m; sourceTree = "<group>"; };
+		8405DD52214A384600070E59 /* HgImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgImageView.h; sourceTree = "<group>"; };
+		8405DD53214A384600070E59 /* HgImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgImageView.m; sourceTree = "<group>"; };
+		8405DD55214A495800070E59 /* HgMusicDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgMusicDetailViewController.h; sourceTree = "<group>"; };
+		8405DD56214A495800070E59 /* HgMusicDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicDetailViewController.m; sourceTree = "<group>"; };
+		8405DD58214A49F700070E59 /* HgMusicTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgMusicTopView.h; sourceTree = "<group>"; };
+		8405DD59214A49F700070E59 /* HgMusicTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicTopView.m; sourceTree = "<group>"; };
+		8405DD5C214B4B4900070E59 /* TXScrollLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXScrollLabelView.h; sourceTree = "<group>"; };
+		8405DD5D214B4B4900070E59 /* TXScrollLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXScrollLabelView.m; sourceTree = "<group>"; };
+		8405DD5E214B4B4900070E59 /* UIView+TXFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TXFrame.h"; sourceTree = "<group>"; };
+		8405DD5F214B4B4900070E59 /* UIView+TXFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TXFrame.m"; sourceTree = "<group>"; };
+		8405DD62214B563800070E59 /* HgMusicMidView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgMusicMidView.h; sourceTree = "<group>"; };
+		8405DD63214B563800070E59 /* HgMusicMidView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicMidView.m; sourceTree = "<group>"; };
+		8405DD65214B58DD00070E59 /* HgIconView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgIconView.h; sourceTree = "<group>"; };
+		8405DD66214B58DD00070E59 /* HgIconView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgIconView.m; sourceTree = "<group>"; };
+		8405DD68214B5AA000070E59 /* HgLrcTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgLrcTableViewCell.h; sourceTree = "<group>"; };
+		8405DD69214B5AA000070E59 /* HgLrcTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgLrcTableViewCell.m; sourceTree = "<group>"; };
+		8405DD6B214B5FFB00070E59 /* HgLrcTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgLrcTableView.h; sourceTree = "<group>"; };
+		8405DD6C214B5FFB00070E59 /* HgLrcTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgLrcTableView.m; sourceTree = "<group>"; };
+		841230EA21414DF60071EBD3 /* News-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "News-Bridging-Header.h"; sourceTree = "<group>"; };
+		841230ED21414E310071EBD3 /* HgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HgViewController.swift; sourceTree = "<group>"; };
+		8415079A214B91E200E37CC7 /* HgMusicBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgMusicBottomView.h; sourceTree = "<group>"; };
+		8415079B214B91E200E37CC7 /* HgMusicBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicBottomView.m; sourceTree = "<group>"; };
+		842E2E0521301F4700C795C6 /* HgHeadlinesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgHeadlinesViewController.h; sourceTree = "<group>"; };
+		842E2E0621301F4700C795C6 /* HgHeadlinesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgHeadlinesViewController.m; sourceTree = "<group>"; };
+		842E2E082130206E00C795C6 /* UIColor+Hg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hg.h"; sourceTree = "<group>"; };
+		842E2E092130206E00C795C6 /* UIColor+Hg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hg.m"; sourceTree = "<group>"; };
+		842E2E0B2130268D00C795C6 /* HgMusicListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgMusicListViewController.h; sourceTree = "<group>"; };
+		842E2E0C2130268D00C795C6 /* HgMusicListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicListViewController.m; sourceTree = "<group>"; };
+		84593AA6212ADFCC00828313 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		84593AA7212ADFCC00828313 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		84707CA3212D8879009C1B95 /* HgMusicPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgMusicPlayerManager.h; sourceTree = "<group>"; };
+		84707CA4212D8879009C1B95 /* HgMusicPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicPlayerManager.m; sourceTree = "<group>"; };
+		84707CA7212D8B14009C1B95 /* UIView+ZJFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJFrame.h"; sourceTree = "<group>"; };
+		84707CA8212D8B14009C1B95 /* UIView+ZJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJFrame.m"; sourceTree = "<group>"; };
+		84707CA9212D8B14009C1B95 /* UIViewController+ZJScrollPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZJScrollPageController.h"; sourceTree = "<group>"; };
+		84707CAA212D8B14009C1B95 /* UIViewController+ZJScrollPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZJScrollPageController.m"; sourceTree = "<group>"; };
+		84707CAB212D8B14009C1B95 /* ZJCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCollectionView.h; sourceTree = "<group>"; };
+		84707CAC212D8B14009C1B95 /* ZJCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCollectionView.m; sourceTree = "<group>"; };
+		84707CAD212D8B14009C1B95 /* ZJContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentView.h; sourceTree = "<group>"; };
+		84707CAE212D8B14009C1B95 /* ZJContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentView.m; sourceTree = "<group>"; };
+		84707CAF212D8B14009C1B95 /* ZJScrollPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageView.h; sourceTree = "<group>"; };
+		84707CB0212D8B14009C1B95 /* ZJScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollPageView.m; sourceTree = "<group>"; };
+		84707CB1212D8B14009C1B95 /* ZJScrollPageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageViewDelegate.h; sourceTree = "<group>"; };
+		84707CB2212D8B14009C1B95 /* ZJScrollSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollSegmentView.h; sourceTree = "<group>"; };
+		84707CB3212D8B14009C1B95 /* ZJScrollSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollSegmentView.m; sourceTree = "<group>"; };
+		84707CB4212D8B14009C1B95 /* ZJSegmentStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSegmentStyle.h; sourceTree = "<group>"; };
+		84707CB5212D8B14009C1B95 /* ZJSegmentStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSegmentStyle.m; sourceTree = "<group>"; };
+		84707CB6212D8B14009C1B95 /* ZJTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTitleView.h; sourceTree = "<group>"; };
+		84707CB7212D8B14009C1B95 /* ZJTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTitleView.m; sourceTree = "<group>"; };
+		84707CC0212D900F009C1B95 /* MBProgressHUD+Hg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Hg.h"; sourceTree = "<group>"; };
+		84707CC1212D900F009C1B95 /* MBProgressHUD+Hg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Hg.m"; sourceTree = "<group>"; };
+		847D4CC4212AE0DE006450BC /* HgMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgMusicViewController.h; sourceTree = "<group>"; };
+		847D4CC5212AE0DE006450BC /* HgMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicViewController.m; sourceTree = "<group>"; };
+		847D4CC7212AE0EC006450BC /* HgVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgVideoViewController.h; sourceTree = "<group>"; };
+		847D4CC8212AE0EC006450BC /* HgVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgVideoViewController.m; sourceTree = "<group>"; };
 		C6A3BA08099FFA23A92CF085 /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
 		FE2BF594B7C39255941CC1A3 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -361,15 +434,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		391EE88720A1366B0083F7B4 /* Hearder */ = {
-			isa = PBXGroup;
-			children = (
-				39B836F020465D3900BA13FB /* Macros.h */,
-				39B836EF20464B7100BA13FB /* PrefixHeader.pch */,
-			);
-			path = Hearder;
-			sourceTree = "<group>";
-		};
 		39783A51202A99AF00A6798B = {
 			isa = PBXGroup;
 			children = (
@@ -393,18 +457,22 @@
 			children = (
 				39783A60202A99AF00A6798B /* AppDelegate.h */,
 				39783A61202A99AF00A6798B /* AppDelegate.m */,
-				391EE88720A1366B0083F7B4 /* Hearder */,
+				841230ED21414E310071EBD3 /* HgViewController.swift */,
+				39783AD2202A9A0F00A6798B /* Mine */,
+				39783AE7202A9A0F00A6798B /* News */,
+				84593AA8212ADFE600828313 /* Music */,
+				84593AA9212ADFE600828313 /* Video */,
+				84593AA5212ADFCC00828313 /* Hearder */,
 				39CF3947204E6EAC008B9FD5 /* Network */,
 				39783A78202A9A0F00A6798B /* Library */,
 				39783AC2202A9A0F00A6798B /* Login */,
 				39783AC9202A9A0F00A6798B /* Main */,
-				39783AD2202A9A0F00A6798B /* Mine */,
-				39783AE7202A9A0F00A6798B /* News */,
 				39783A74202A9A0100A6798B /* Category */,
 				3982FA5620A043CF00E7EE99 /* Tool */,
 				39783A69202A99AF00A6798B /* Assets.xcassets */,
 				39783A6E202A99AF00A6798B /* Info.plist */,
 				39783A5D202A99AF00A6798B /* Supporting Files */,
+				841230EA21414DF60071EBD3 /* News-Bridging-Header.h */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -422,6 +490,12 @@
 			children = (
 				39783A75202A9A0100A6798B /* NSObject+Hg.h */,
 				39783A76202A9A0100A6798B /* NSObject+Hg.m */,
+				84707CC0212D900F009C1B95 /* MBProgressHUD+Hg.h */,
+				84707CC1212D900F009C1B95 /* MBProgressHUD+Hg.m */,
+				842E2E082130206E00C795C6 /* UIColor+Hg.h */,
+				842E2E092130206E00C795C6 /* UIColor+Hg.m */,
+				8405DD472148E65600070E59 /* NSDictionary+Hg.h */,
+				8405DD482148E65600070E59 /* NSDictionary+Hg.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -429,9 +503,10 @@
 		39783A78202A9A0F00A6798B /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				8405DD5B214B4B4900070E59 /* TXScrollLabelView */,
+				84707CA6212D8B14009C1B95 /* ZJScrollPageView */,
 				3982F9D4209C55EB00E7EE99 /* FLAnimatedImage */,
 				3982F99B209C55E000E7EE99 /* SDWebImage */,
-				3982F96C209B102200E7EE99 /* WMPageController */,
 				39B836F12046A1A100BA13FB /* MJRefresh */,
 				39783B55202AEBE400A6798B /* Masonry */,
 				39783A79202A9A0F00A6798B /* AFNetworking */,
@@ -582,11 +657,10 @@
 		39783AE8202A9A0F00A6798B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3982F980209B10EF00E7EE99 /* HgHeadlinesViewController.h */,
-				3982F981209B10EF00E7EE99 /* HgHeadlinesViewController.m */,
+				842E2E0521301F4700C795C6 /* HgHeadlinesViewController.h */,
+				842E2E0621301F4700C795C6 /* HgHeadlinesViewController.m */,
 				39783B2A202AE0C200A6798B /* HgNewsViewController.h */,
 				39783B2B202AE0C200A6798B /* HgNewsViewController.m */,
-				39783B2C202AE0C200A6798B /* HgNewsViewController.xib */,
 				3990A0E9202D7F2800B4D681 /* HgNewsUserViewController.h */,
 				3990A0EA202D7F2800B4D681 /* HgNewsUserViewController.m */,
 				3990A0EB202D7F2800B4D681 /* HgNewsUserViewController.xib */,
@@ -643,33 +717,6 @@
 				39783B6E202AEBE400A6798B /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
-			sourceTree = "<group>";
-		};
-		3982F96C209B102200E7EE99 /* WMPageController */ = {
-			isa = PBXGroup;
-			children = (
-				3982F96D209B102200E7EE99 /* UIViewController+WMPageController.h */,
-				3982F96E209B102200E7EE99 /* UIViewController+WMPageController.m */,
-				3982F96F209B102200E7EE99 /* WMMenuView */,
-				3982F978209B102200E7EE99 /* WMPageController.h */,
-				3982F979209B102200E7EE99 /* WMPageController.m */,
-			);
-			path = WMPageController;
-			sourceTree = "<group>";
-		};
-		3982F96F209B102200E7EE99 /* WMMenuView */ = {
-			isa = PBXGroup;
-			children = (
-				3982F970209B102200E7EE99 /* WMMenuItem.h */,
-				3982F971209B102200E7EE99 /* WMMenuItem.m */,
-				3982F972209B102200E7EE99 /* WMMenuView.h */,
-				3982F973209B102200E7EE99 /* WMMenuView.m */,
-				3982F974209B102200E7EE99 /* WMProgressView.h */,
-				3982F975209B102200E7EE99 /* WMProgressView.m */,
-				3982F976209B102200E7EE99 /* WMScrollView.h */,
-				3982F977209B102200E7EE99 /* WMScrollView.m */,
-			);
-			path = WMMenuView;
 			sourceTree = "<group>";
 		};
 		3982F99B209C55E000E7EE99 /* SDWebImage */ = {
@@ -742,6 +789,8 @@
 				3982FA5820A0440200E7EE99 /* HgLaunchImageAdView.m */,
 				391EE8CC20A41BE90083F7B4 /* HgAlertSheetView.h */,
 				391EE8CD20A41BE90083F7B4 /* HgAlertSheetView.m */,
+				8405DD52214A384600070E59 /* HgImageView.h */,
+				8405DD53214A384600070E59 /* HgImageView.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -854,8 +903,153 @@
 				3982FA5420A031DE00E7EE99 /* HgMineRequest.m */,
 				391EE88820A139660083F7B4 /* HgHeadlinesRequest.h */,
 				391EE88920A139660083F7B4 /* HgHeadlinesRequest.m */,
+				8405DD412148BCC800070E59 /* HgMusicRequest.h */,
+				8405DD422148BCC800070E59 /* HgMusicRequest.m */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		8405DD5B214B4B4900070E59 /* TXScrollLabelView */ = {
+			isa = PBXGroup;
+			children = (
+				8405DD5C214B4B4900070E59 /* TXScrollLabelView.h */,
+				8405DD5D214B4B4900070E59 /* TXScrollLabelView.m */,
+				8405DD5E214B4B4900070E59 /* UIView+TXFrame.h */,
+				8405DD5F214B4B4900070E59 /* UIView+TXFrame.m */,
+			);
+			path = TXScrollLabelView;
+			sourceTree = "<group>";
+		};
+		84593AA5212ADFCC00828313 /* Hearder */ = {
+			isa = PBXGroup;
+			children = (
+				84593AA6212ADFCC00828313 /* Macros.h */,
+				84593AA7212ADFCC00828313 /* PrefixHeader.pch */,
+			);
+			path = Hearder;
+			sourceTree = SOURCE_ROOT;
+		};
+		84593AA8212ADFE600828313 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				84707C9F212D8822009C1B95 /* MusicPlayMangaer */,
+				847D4CC0212AE07E006450BC /* Controller */,
+				847D4CBF212AE07C006450BC /* Model */,
+				847D4CBE212AE07A006450BC /* View */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		84593AA9212ADFE600828313 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				847D4CC3212AE0A0006450BC /* Controller */,
+				847D4CC2212AE09E006450BC /* model */,
+				847D4CC1212AE09C006450BC /* View */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		84707C9F212D8822009C1B95 /* MusicPlayMangaer */ = {
+			isa = PBXGroup;
+			children = (
+				84707CA3212D8879009C1B95 /* HgMusicPlayerManager.h */,
+				84707CA4212D8879009C1B95 /* HgMusicPlayerManager.m */,
+			);
+			path = MusicPlayMangaer;
+			sourceTree = "<group>";
+		};
+		84707CA6212D8B14009C1B95 /* ZJScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				84707CA7212D8B14009C1B95 /* UIView+ZJFrame.h */,
+				84707CA8212D8B14009C1B95 /* UIView+ZJFrame.m */,
+				84707CA9212D8B14009C1B95 /* UIViewController+ZJScrollPageController.h */,
+				84707CAA212D8B14009C1B95 /* UIViewController+ZJScrollPageController.m */,
+				84707CAB212D8B14009C1B95 /* ZJCollectionView.h */,
+				84707CAC212D8B14009C1B95 /* ZJCollectionView.m */,
+				84707CAD212D8B14009C1B95 /* ZJContentView.h */,
+				84707CAE212D8B14009C1B95 /* ZJContentView.m */,
+				84707CAF212D8B14009C1B95 /* ZJScrollPageView.h */,
+				84707CB0212D8B14009C1B95 /* ZJScrollPageView.m */,
+				84707CB1212D8B14009C1B95 /* ZJScrollPageViewDelegate.h */,
+				84707CB2212D8B14009C1B95 /* ZJScrollSegmentView.h */,
+				84707CB3212D8B14009C1B95 /* ZJScrollSegmentView.m */,
+				84707CB4212D8B14009C1B95 /* ZJSegmentStyle.h */,
+				84707CB5212D8B14009C1B95 /* ZJSegmentStyle.m */,
+				84707CB6212D8B14009C1B95 /* ZJTitleView.h */,
+				84707CB7212D8B14009C1B95 /* ZJTitleView.m */,
+			);
+			path = ZJScrollPageView;
+			sourceTree = "<group>";
+		};
+		847D4CBE212AE07A006450BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8405DD4A2148EC7400070E59 /* HgMusicCell.h */,
+				8405DD4B2148EC7400070E59 /* HgMusicCell.m */,
+				8405DD4C2148EC7400070E59 /* HgMusicCell.xib */,
+				8405DD58214A49F700070E59 /* HgMusicTopView.h */,
+				8405DD59214A49F700070E59 /* HgMusicTopView.m */,
+				8405DD62214B563800070E59 /* HgMusicMidView.h */,
+				8405DD63214B563800070E59 /* HgMusicMidView.m */,
+				8405DD65214B58DD00070E59 /* HgIconView.h */,
+				8405DD66214B58DD00070E59 /* HgIconView.m */,
+				8405DD68214B5AA000070E59 /* HgLrcTableViewCell.h */,
+				8405DD69214B5AA000070E59 /* HgLrcTableViewCell.m */,
+				8405DD6B214B5FFB00070E59 /* HgLrcTableView.h */,
+				8405DD6C214B5FFB00070E59 /* HgLrcTableView.m */,
+				8415079A214B91E200E37CC7 /* HgMusicBottomView.h */,
+				8415079B214B91E200E37CC7 /* HgMusicBottomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		847D4CBF212AE07C006450BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8405DD442148E5A100070E59 /* HgMusicInfoModel.h */,
+				8405DD452148E5A100070E59 /* HgMusicInfoModel.m */,
+				8405DD4F2149046100070E59 /* HgSongInfo.h */,
+				8405DD502149046100070E59 /* HgSongInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		847D4CC0212AE07E006450BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				847D4CC4212AE0DE006450BC /* HgMusicViewController.h */,
+				847D4CC5212AE0DE006450BC /* HgMusicViewController.m */,
+				842E2E0B2130268D00C795C6 /* HgMusicListViewController.h */,
+				842E2E0C2130268D00C795C6 /* HgMusicListViewController.m */,
+				8405DD55214A495800070E59 /* HgMusicDetailViewController.h */,
+				8405DD56214A495800070E59 /* HgMusicDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		847D4CC1212AE09C006450BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		847D4CC2212AE09E006450BC /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		847D4CC3212AE0A0006450BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				847D4CC7212AE0EC006450BC /* HgVideoViewController.h */,
+				847D4CC8212AE0EC006450BC /* HgVideoViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -869,8 +1063,6 @@
 				39783A56202A99AF00A6798B /* Sources */,
 				39783A57202A99AF00A6798B /* Frameworks */,
 				39783A58202A99AF00A6798B /* Resources */,
-				0C252FE212827336F1C21983 /* [CP] Embed Pods Frameworks */,
-				550A64E0CC39DDF1A9468171 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -894,7 +1086,13 @@
 					39783A59202A99AF00A6798B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 86REPNBBTA;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -921,8 +1119,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8405DD4E2148EC7400070E59 /* HgMusicCell.xib in Resources */,
 				3982F96B209B081B00E7EE99 /* HgSettingViewController.xib in Resources */,
-				39783B2E202AE0C200A6798B /* HgNewsViewController.xib in Resources */,
 				39783B29202AC82400A6798B /* HgMineInfoNameViewController.xib in Resources */,
 				39783B18202A9A0F00A6798B /* HgMineViewController.xib in Resources */,
 				3990A0ED202D7F2800B4D681 /* HgNewsUserViewController.xib in Resources */,
@@ -943,39 +1141,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C252FE212827336F1C21983 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		550A64E0CC39DDF1A9468171 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-resources.sh",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E6F19F1C42D832BB7A013694 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1002,25 +1167,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				391EE88D20A2EE510083F7B4 /* HgBaseViewController.m in Sources */,
+				8405DD64214B563800070E59 /* HgMusicMidView.m in Sources */,
 				3982F9D3209C55E000E7EE99 /* UIView+WebCacheOperation.m in Sources */,
-				3982F97C209B102200E7EE99 /* WMMenuView.m in Sources */,
+				8405DD60214B4B4900070E59 /* TXScrollLabelView.m in Sources */,
 				39783AF2202A9A0F00A6798B /* AFURLSessionManager.m in Sources */,
-				3982F97F209B102200E7EE99 /* WMPageController.m in Sources */,
-				3982F97A209B102200E7EE99 /* UIViewController+WMPageController.m in Sources */,
 				3982F9D9209C55EB00E7EE99 /* FLAnimatedImage.m in Sources */,
 				39783B76202AEBE400A6798B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				39CF3945204E648C008B9FD5 /* HgMineArticleViewController.m in Sources */,
 				3982F9C4209C55E000E7EE99 /* NSImage+WebCache.m in Sources */,
 				39783A62202A99AF00A6798B /* AppDelegate.m in Sources */,
 				39783A77202A9A0100A6798B /* NSObject+Hg.m in Sources */,
-				3982F97E209B102200E7EE99 /* WMScrollView.m in Sources */,
 				391EE88A20A139660083F7B4 /* HgHeadlinesRequest.m in Sources */,
 				3982F960209AE75F00E7EE99 /* HgConst.m in Sources */,
 				3982F9CA209C55E000E7EE99 /* SDWebImageDownloaderOperation.m in Sources */,
+				842E2E0A2130206E00C795C6 /* UIColor+Hg.m in Sources */,
 				39783B1C202A9A0F00A6798B /* HgMineInfoViewCell.m in Sources */,
 				39B837242046A1A100BA13FB /* MJRefreshHeader.m in Sources */,
+				842E2E0D2130268D00C795C6 /* HgMusicListViewController.m in Sources */,
 				39783B6F202AEBE400A6798B /* MASCompositeConstraint.m in Sources */,
 				39CF394A204E6ECC008B9FD5 /* HgBaseNetwork.m in Sources */,
+				84707CB8212D8B14009C1B95 /* UIView+ZJFrame.m in Sources */,
+				8405DD61214B4B4900070E59 /* UIView+TXFrame.m in Sources */,
 				3982F9DA209C55EB00E7EE99 /* FLAnimatedImageView.m in Sources */,
 				39783AEE202A9A0F00A6798B /* AFNetworkReachabilityManager.m in Sources */,
 				39783B70202AEBE400A6798B /* MASConstraint.m in Sources */,
@@ -1030,27 +1197,36 @@
 				39B837302046A1A100BA13FB /* NSBundle+MJRefresh.m in Sources */,
 				39783B71202AEBE400A6798B /* MASConstraintMaker.m in Sources */,
 				391EE8CE20A41BE90083F7B4 /* HgAlertSheetView.m in Sources */,
+				8405DD462148E5A100070E59 /* HgMusicInfoModel.m in Sources */,
 				39783B72202AEBE400A6798B /* MASLayoutConstraint.m in Sources */,
 				39783A5F202A99AF00A6798B /* main.m in Sources */,
 				39783B11202A9A0F00A6798B /* HgNavigationController.m in Sources */,
 				39783B0F202A9A0F00A6798B /* HgLoginViewController.m in Sources */,
 				39783B75202AEBE400A6798B /* NSArray+MASAdditions.m in Sources */,
 				39B8372F2046A1A100BA13FB /* MJRefreshConst.m in Sources */,
-				3982F97D209B102200E7EE99 /* WMProgressView.m in Sources */,
+				84707CBB212D8B14009C1B95 /* ZJContentView.m in Sources */,
 				39783AEF202A9A0F00A6798B /* AFSecurityPolicy.m in Sources */,
 				39783B1A202A9A0F00A6798B /* HgHeadOfMineView.m in Sources */,
 				39783B78202AEBE400A6798B /* ViewController+MASAdditions.m in Sources */,
+				8405DD6D214B5FFB00070E59 /* HgLrcTableView.m in Sources */,
+				8405DD54214A384600070E59 /* HgImageView.m in Sources */,
 				39783B14202A9A0F00A6798B /* HgTabBarController.m in Sources */,
+				841230EE21414E310071EBD3 /* HgViewController.swift in Sources */,
 				39B837282046A1A100BA13FB /* MJRefreshBackGifFooter.m in Sources */,
+				84707CBE212D8B14009C1B95 /* ZJSegmentStyle.m in Sources */,
 				3982F9CD209C55E000E7EE99 /* UIButton+WebCache.m in Sources */,
 				3982F9CC209C55E000E7EE99 /* SDWebImagePrefetcher.m in Sources */,
 				39B8372B2046A1A100BA13FB /* MJRefreshGifHeader.m in Sources */,
 				3982F9C8209C55E000E7EE99 /* SDWebImageDecoder.m in Sources */,
+				84707CBC212D8B14009C1B95 /* ZJScrollPageView.m in Sources */,
 				39B837202046A1A100BA13FB /* MJRefreshAutoFooter.m in Sources */,
+				84707CBD212D8B14009C1B95 /* ZJScrollSegmentView.m in Sources */,
 				39783B2D202AE0C200A6798B /* HgNewsViewController.m in Sources */,
-				3982F982209B10EF00E7EE99 /* HgHeadlinesViewController.m in Sources */,
 				3982F966209AF50000E7EE99 /* HgLoginRequest.m in Sources */,
+				84707CA5212D8879009C1B95 /* HgMusicPlayerManager.m in Sources */,
 				39783B17202A9A0F00A6798B /* HgMineViewController.m in Sources */,
+				847D4CC9212AE0EC006450BC /* HgVideoViewController.m in Sources */,
+				84707CBF212D8B14009C1B95 /* ZJTitleView.m in Sources */,
 				39B837312046A1A100BA13FB /* UIScrollView+MJExtension.m in Sources */,
 				39B8372A2046A1A100BA13FB /* MJRefreshBackStateFooter.m in Sources */,
 				39783B19202A9A0F00A6798B /* HgItemModel.m in Sources */,
@@ -1058,14 +1234,19 @@
 				39B8372D2046A1A100BA13FB /* MJRefreshStateHeader.m in Sources */,
 				39783B13202A9A0F00A6798B /* HgTabBar.m in Sources */,
 				39B837232046A1A100BA13FB /* MJRefreshFooter.m in Sources */,
-				3982F97B209B102200E7EE99 /* WMMenuItem.m in Sources */,
 				3982F9CE209C55E000E7EE99 /* UIImage+GIF.m in Sources */,
+				8405DD512149046100070E59 /* HgSongInfo.m in Sources */,
 				39783B15202A9A0F00A6798B /* HgMineInfoViewController.m in Sources */,
 				3982F9C9209C55E000E7EE99 /* SDWebImageDownloader.m in Sources */,
+				84707CB9212D8B14009C1B95 /* UIViewController+ZJScrollPageController.m in Sources */,
 				39B837332046A1A100BA13FB /* UIView+MJExtension.m in Sources */,
 				39783AF0202A9A0F00A6798B /* AFURLRequestSerialization.m in Sources */,
+				8405DD67214B58DD00070E59 /* HgIconView.m in Sources */,
 				39783B1E202A9A0F00A6798B /* HgMineItemViewCell.m in Sources */,
 				3982F9CB209C55E000E7EE99 /* SDWebImageManager.m in Sources */,
+				8405DD6A214B5AA000070E59 /* HgLrcTableViewCell.m in Sources */,
+				8405DD5A214A49F700070E59 /* HgMusicTopView.m in Sources */,
+				84707CC2212D900F009C1B95 /* MBProgressHUD+Hg.m in Sources */,
 				3982F9D2209C55E000E7EE99 /* UIView+WebCache.m in Sources */,
 				39783B74202AEBE400A6798B /* MASViewConstraint.m in Sources */,
 				3982F9C5209C55E000E7EE99 /* SDImageCache.m in Sources */,
@@ -1073,7 +1254,9 @@
 				39783AF1202A9A0F00A6798B /* AFURLResponseSerialization.m in Sources */,
 				3982F9D0209C55E000E7EE99 /* UIImageView+HighlightedWebCache.m in Sources */,
 				39783B77202AEBE400A6798B /* View+MASAdditions.m in Sources */,
+				8405DD492148E65600070E59 /* NSDictionary+Hg.m in Sources */,
 				3982F9CF209C55E000E7EE99 /* UIImage+MultiFormat.m in Sources */,
+				84707CBA212D8B14009C1B95 /* ZJCollectionView.m in Sources */,
 				39B837222046A1A100BA13FB /* MJRefreshComponent.m in Sources */,
 				39783B73202AEBE400A6798B /* MASViewAttribute.m in Sources */,
 				39B837212046A1A100BA13FB /* MJRefreshBackFooter.m in Sources */,
@@ -1082,16 +1265,22 @@
 				39B837252046A1A100BA13FB /* MJRefreshAutoGifFooter.m in Sources */,
 				3982F9D1209C55E000E7EE99 /* UIImageView+WebCache.m in Sources */,
 				39783AED202A9A0F00A6798B /* AFHTTPSessionManager.m in Sources */,
+				847D4CC6212AE0DE006450BC /* HgMusicViewController.m in Sources */,
 				39B837262046A1A100BA13FB /* MJRefreshAutoNormalFooter.m in Sources */,
+				8405DD432148BCC800070E59 /* HgMusicRequest.m in Sources */,
+				8415079C214B91E200E37CC7 /* HgMusicBottomView.m in Sources */,
 				3982F9C6209C55E000E7EE99 /* SDImageCacheConfig.m in Sources */,
 				39783B12202A9A0F00A6798B /* HgRootViewController.m in Sources */,
 				3990A0E7202D2EBD00B4D681 /* HgNewsViewCell.m in Sources */,
+				8405DD4D2148EC7400070E59 /* HgMusicCell.m in Sources */,
 				39B837292046A1A100BA13FB /* MJRefreshBackNormalFooter.m in Sources */,
 				3982FA5520A031DE00E7EE99 /* HgMineRequest.m in Sources */,
+				842E2E0721301F4700C795C6 /* HgHeadlinesViewController.m in Sources */,
 				3982F96A209B081B00E7EE99 /* HgSettingViewController.m in Sources */,
 				3982FA5920A0440200E7EE99 /* HgLaunchImageAdView.m in Sources */,
 				39DAAADD202C413600B2A951 /* HgNews.m in Sources */,
 				39783B28202AC82400A6798B /* HgMineInfoNameViewController.m in Sources */,
+				8405DD57214A495800070E59 /* HgMusicDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1192,6 +1381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 86REPNBBTA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1199,12 +1389,15 @@
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/News/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Hearder/PrefixHeader.pch";
 				INFOPLIST_FILE = News/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Xbul.xbullschool.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "News/News-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1214,6 +1407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 86REPNBBTA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1221,12 +1415,14 @@
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/News/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Hearder/PrefixHeader.pch";
 				INFOPLIST_FILE = News/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Xbul.xbullschool.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "News/News-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

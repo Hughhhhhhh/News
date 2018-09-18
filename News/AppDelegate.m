@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <notify.h>
 #import "HgRootViewController.h"
 
 @interface AppDelegate ()
@@ -53,6 +56,14 @@
         };
         
     }];
+    
+    // 后台播放音频设置,需要在Capabilities->Background Modes中勾选Audio,Airplay,and Picture in Picture
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setActive:YES error:nil];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
+    // 设置接受远程控制
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     
     return YES;
 }

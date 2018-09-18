@@ -10,7 +10,11 @@
 
 @implementation HgConst
 
+//http://tingapi.ting.baidu.com/v1/restserver/ting?from=qianqian&version=2.1.0&method=baidu.ting.song.play&songid=
+
 NSString * HgMainURL = @"http://interview.jbangit.com/";
+
+NSString * HgMusicMainURL = @"http://tingapi.ting.baidu.com/v1/restserver/ting?from=qianqian&version=2.1.0";
 
 NSString *const HgUserLogin = @"user/login";
 

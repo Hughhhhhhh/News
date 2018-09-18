@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "HgBaseViewController.h"
+#import "ZJScrollPageViewDelegate.h"
 
-@interface HgNewsViewController : HgBaseViewController
+@interface HgNewsViewController : HgBaseViewController<ZJScrollPageViewChildVcDelegate>
 
 @end

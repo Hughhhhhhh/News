@@ -2,12 +2,12 @@
 //  HgHeadlinesViewController.h
 //  News
 //
-//  Created by CZG on 18/5/3.
+//  Created by admin on 2018/8/24.
 //  Copyright © 2018年 xbull. All rights reserved.
 //
 
-#import "WMPageController.h"
+#import "HgBaseViewController.h"
 
-@interface HgHeadlinesViewController : WMPageController
+@interface HgHeadlinesViewController : HgBaseViewController
 
 @end

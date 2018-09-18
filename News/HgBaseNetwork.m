@@ -40,6 +40,22 @@ static AFHTTPSessionManager *manager = nil;
     }];
 }
 
++ (void)getMusicURL:(NSString *)subURL parameters:(NSDictionary *)parameters completionHandler:(void (^)(id responseObject))complete {
+    
+    NSString *url = [HgMusicMainURL stringByAppendingString:subURL];
+    NSString *mainUrl=[NSString stringWithFormat:@"%@",url];
+    [[self sharedManager] GET:mainUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (complete) {
+            complete(responseObject);
+        }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if(complete)
+            complete(nil);
+    }];
+}
+
 + (void)postURL:(NSString *)subURL parameters:(NSDictionary *)parameters completionHandler:(void (^)(id responseObject))complete {
     
     NSString *url = [HgMainURL stringByAppendingPathComponent:subURL];
@@ -98,7 +114,6 @@ static AFHTTPSessionManager *manager = nil;
     dic = responseObject;
     
     id obj = dic[@"code"];
-    NSLog(@"%@",(NSString *)obj);
     if (nil == obj) return @"";
     NSString * objc = [NSString stringWithFormat:@"%@",obj];
     

@@ -17,6 +17,8 @@
 #import "HgNavigationController.h"
 #import "HgHeadlinesViewController.h"
 #import "HgAlertSheetView.h"
+#import "HgMusicViewController.h"
+#import "HgVideoViewController.h"
 
 @interface HgTabBarController ()<UITabBarControllerDelegate,HgTabBarDelegate>
 
@@ -86,6 +88,16 @@
                                  MallTitleKey : @"头条",
                                  MallImgKey   : @"头条（未）",
                                  MallSelImgKey: @"头条（选中）"},
+                             @{
+                                 MallClassKey : @"HgVideoViewController",
+                                 MallTitleKey : @"视频",
+                                 MallImgKey   : @"视频 （未）",
+                                 MallSelImgKey: @"视频 （选中）"},
+                             @{
+                                 MallClassKey : @"HgMusicViewController",
+                                 MallTitleKey : @"音乐",
+                                 MallImgKey   : @"音乐（未）",
+                                 MallSelImgKey: @"音乐（选中）"},
                              @{
                                  MallClassKey : @"HgMineViewController",
                                  MallTitleKey : @"我",

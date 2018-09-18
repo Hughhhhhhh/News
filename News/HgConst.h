@@ -14,6 +14,8 @@
 
 extern NSString * HgMainURL;//主要地址
 
+extern NSString * HgMusicMainURL;
+
 extern NSString *const HgUserLogin;
 
 extern NSString *const HgUserNickName;

@@ -30,7 +30,7 @@
     self.centerBtn.center = CGPointMake(CGRectGetWidth(self.frame) * 0.5, CGRectGetHeight(self.frame) * 0.1);
     
     // 2.设置其他tabbarButton的frame
-    CGFloat tabBarButtonWidth = CGRectGetWidth(self.frame) / 3;
+    CGFloat tabBarButtonWidth = CGRectGetWidth(self.frame) / 5;
     CGFloat tabBarButtonIndex = 0;
     for (UIView *childView in self.subviews) {
         Class class = NSClassFromString(@"UITabBarButton");
@@ -38,7 +38,7 @@
             // 设置位置
             childView.frame = CGRectMake(tabBarButtonWidth * tabBarButtonIndex, CGRectGetMinY(childView.frame), tabBarButtonWidth, CGRectGetHeight(childView.frame));
             // 增加索引
-            tabBarButtonIndex += (tabBarButtonIndex == 0 ? 2 : 1);
+            tabBarButtonIndex += (tabBarButtonIndex == 1 ? 2 : 1);
         }
     }
 }

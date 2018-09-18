@@ -11,18 +11,10 @@
 @interface HgHeadlinesRequest : HgBaseNetwork
 
 /**
- *  获取我的分类标题
- *
- *
- */
-+(void)getCategoryTitles :(void (^)(NSString* msg,id responseData))complete;
-
-/**
  * 获取新闻列表
  *
  *
  */
-
 +(void)getNewsListWithPage:(NSString *)page block:(void (^)(NSString * msg,id responseData))complete;
 
 @end

@@ -44,11 +44,7 @@
             [NSObject saveObj:self.nameStr withKey:@"nickname"];
             [self.navigationController popViewControllerAnimated:YES];
         } else {
-            [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
-            
-            [SVProgressHUD showErrorWithStatus:@"修改失败"];
-            
-            [SVProgressHUD dismissWithDelay:1.5f];
+            [MBProgressHUD showHUDMsg:@"修改失败"];
         }
     }];
     

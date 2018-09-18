@@ -13,6 +13,7 @@
 #import "HgMineInfoViewController.h"
 #import "HgMineArticleViewController.h"
 #import "HgSettingViewController.h"
+#import "News-Swift.h"
 
 #define HeadViewHeight 183
 
@@ -57,7 +58,7 @@
             frame.size.width = -yOffset*SCREENW/183;
             self.headView.frame=frame;
             
-        }else if(yOffset<-64){
+        }else if(yOffset<-NaviBarHeight){
             [view_bar setHidden:NO];
             
             self.pageTitle.hidden = NO;
@@ -109,7 +110,7 @@
     
     [view_bar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(0);
-        make.height.mas_equalTo(64);
+        make.height.mas_equalTo(NaviBarHeight);
         make.left.mas_equalTo(0);
         make.top.mas_equalTo(0);
     }];
@@ -200,14 +201,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *rows = self.dataArray[indexPath.section];
-    HgItemModel *item = rows[indexPath.row];
-    if (item.destination) {
-        UIViewController *vc = [[item.destination alloc] init];
-        vc.navigationItem.title = item.name;
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
-    }
+//    NSArray *rows = self.dataArray[indexPath.section];
+//    HgItemModel *item = rows[indexPath.row];
+//    if (item.destination) {
+//        UIViewController *vc = [[item.destination alloc] init];
+//        vc.navigationItem.title = item.name;
+//        vc.hidesBottomBarWhenPushed = YES;
+//        [self.navigationController pushViewController:vc animated:YES];
+//    }
+    HgViewController * vc = [[HgViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void) setInfo{

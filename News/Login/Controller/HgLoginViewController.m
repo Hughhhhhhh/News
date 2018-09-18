@@ -50,7 +50,8 @@
     [self.pswTF addTarget:self
                    action:@selector(textFieldDidChangeValue:)
          forControlEvents:UIControlEventEditingChanged];
-    
+    self.loginTF.clearButtonMode=UITextFieldViewModeWhileEditing;
+    self.pswTF.clearButtonMode=UITextFieldViewModeWhileEditing;
     
 }
 
@@ -112,11 +113,7 @@
         NSLog(@"%@",responseData);
         if([msg isEqualToString:@"0"])
         {
-            [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
-            
-            [SVProgressHUD showSuccessWithStatus:@"登录成功~"];
-            
-            [SVProgressHUD dismissWithDelay:1.0f];
+            [MBProgressHUD showHUDMsg:@"登录成功~"];
             
             [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
             [NSObject saveObj:@"1" withKey:@"isLogin"];
@@ -136,11 +133,7 @@
             NSLog(@"请求成功！");
         }else{
             
-            [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
-            
-            [SVProgressHUD showErrorWithStatus:@"账号密码错误"];
-            
-            [SVProgressHUD dismissWithDelay:1.5f];
+            [MBProgressHUD showHUDMsg:@"账号密码错误"];
             
             NSLog(@"请求失败");
         }

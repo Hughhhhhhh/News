@@ -13,7 +13,7 @@
 
 @interface HgNewsViewController ()<UITableViewDelegate,UITableViewDataSource,clickNameDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) UITableView *tableView;
 
 @property (nonatomic, strong) NSArray *groups;
 
@@ -32,10 +32,11 @@
     if (self.data.count==0) {
         self.page = 1;
         self.num = [NSString stringWithFormat:@"%ld",self.page];
+        WEAKSELF
         [HgNews requestData:self.num success:^(NSArray *group) {
-            self.groups = group;
-            self.data = [NSMutableArray arrayWithArray:self.groups];
-            [self.tableView reloadData];
+            weakSelf.groups = group;
+            weakSelf.data = [NSMutableArray arrayWithArray:weakSelf.groups];
+            [weakSelf.tableView reloadData];
         }];
         self.page ++;
         [self setupRefresh];
@@ -47,10 +48,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREENW, SCREENH -64 -45 -45) style:UITableViewStylePlain];
     self.tableView.delegate =self;
     self.tableView.dataSource =self;
-    
     [self.tableView setSeparatorColor:[UIColor clearColor ]];
+    [self.view addSubview:self.tableView];
     
     self.page = 2;
     
@@ -84,19 +86,13 @@
         }
     }];
 }
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
-    return self.data.count;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return self.data.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    HgNews * model = self.data[indexPath.section];
+    HgNews * model = self.data[indexPath.row];
     
     HgNewsViewCell * cell = [HgNewsViewCell cellWithTableView:tableView];
     

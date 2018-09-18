@@ -2,105 +2,67 @@
 //  HgHeadlinesViewController.m
 //  News
 //
-//  Created by CZG on 18/5/3.
+//  Created by admin on 2018/8/24.
 //  Copyright © 2018年 xbull. All rights reserved.
 //
 
 #import "HgHeadlinesViewController.h"
 #import "HgNewsViewController.h"
+#import "ZJScrollPageView.h"
 
-@interface HgHeadlinesViewController ()
+@interface HgHeadlinesViewController ()<ZJScrollPageViewDelegate>
+
+@property (nonatomic , strong) NSArray * titles;
 
 @end
 
 @implementation HgHeadlinesViewController
 
--(void)loadView
-{
-    [super loadView];
-    self.menuViewStyle = WMMenuViewStyleLine;
-    self.progressViewIsNaughty = YES;
-    self.progressWidth = 10;
-    self.selectIndex = 0;
-    self.automaticallyCalculatesItemWidths = YES;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    [self initRightBtn];
-    
-//    [self initLeftBtn];
+    [self creatUI];
 }
 
--(void)initRightBtn{
-    UIButton * scanBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+-(void)creatUI{
+    self.view.backgroundColor=[UIColor whiteColor];
+    //必要的设置, 如果没有设置可能导致内容显示不正常
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    ZJSegmentStyle *style = [[ZJSegmentStyle alloc] init];
+    style.showLine = YES;
+    style.scrollLineColor=Theme_Color;
+    style.scrollLineHeight=2;
+    style.normalTitleColor=RGBA(100, 100, 100, 1);
+    style.selectedTitleColor=Theme_Color;
+    style.scrollTitle = NO;
+    style.gradualChangeTitleColor = YES;
+    style.titleFont=[UIFont boldSystemFontOfSize:15];
     
-    [scanBtn setBackgroundImage:[UIImage imageNamed:@"加号"] forState:UIControlStateNormal];
-    
-//    [scanBtn setTitle:@"➕" forState:UIControlStateNormal];
-    
-    [scanBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    
-    scanBtn.layer.cornerRadius = 5;
-    scanBtn.layer.shadowOffset =  CGSizeMake(0, 1);
-    scanBtn.layer.shadowOpacity = 0.8;
-    scanBtn.layer.shadowColor =  [UIColor blackColor].CGColor;
-    
-//    scanBtn.frame = CGRectMake(SCREENW - 40, 10, 25, 25);
-    scanBtn.frame = CGRectMake(0 , 10, 25, 25);
-    
-    self.menuView.rightView = scanBtn;
-    
-//    [scanBtn bringSubviewToFront:self.menuView];
+    self.titles  = @[@"新闻",@"新闻",@"新闻"];
+    // 初始化
+    ZJScrollPageView *scrollPageView = [[ZJScrollPageView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height) segmentStyle:style titles:self.titles parentViewController:self delegate:self];
+    [self.view addSubview:scrollPageView];
 }
 
--(void)initLeftBtn{
-    UIButton * scanBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    [scanBtn setBackgroundImage:[UIImage imageNamed:@"扫一扫"] forState:UIControlStateNormal];
-    
-    scanBtn.frame = CGRectMake(0, 0, 25, 25);
-    
-    UIBarButtonItem * leftBtn = [[UIBarButtonItem alloc] initWithCustomView:scanBtn];
-    
-    self.navigationItem.leftBarButtonItem = leftBtn;
+- (BOOL)shouldAutomaticallyForwardAppearanceMethods {
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)numbersOfChildControllersInPageController:(WMPageController *)pageController {
-    return 1;
+- (NSInteger)numberOfChildViewControllers {
+    return self.titles.count;
 }
-
-- (NSString *)pageController:(WMPageController *)pageController titleAtIndex:(NSInteger)index {
+- (UIViewController<ZJScrollPageViewChildVcDelegate> *)childViewController:(UIViewController<ZJScrollPageViewChildVcDelegate> *)reuseViewController forIndex:(NSInteger)index {
+    UIViewController<ZJScrollPageViewChildVcDelegate> *childVc = reuseViewController;
     
-    return @"关注1";
-}
-
-- (UIViewController *)pageController:(WMPageController *)pageController viewControllerAtIndex:(NSInteger)index {
+    if (!childVc) {
+        HgNewsViewController *VC = [[HgNewsViewController alloc] init];
+        childVc=VC;
+    }
     
-    return [[HgNewsViewController alloc] init];
-}
-
-- (CGFloat)menuView:(WMMenuView *)menu widthForItemAtIndex:(NSInteger)index {
-    CGFloat width = [super menuView:menu widthForItemAtIndex:index];
-    return width + 20;
-}
-
-- (CGRect)pageController:(WMPageController *)pageController preferredFrameForMenuView:(WMMenuView *)menuView {
-
-    return CGRectMake(0, 0, self.view.frame.size.width, 44);
-}
-
-- (CGRect)pageController:(WMPageController *)pageController preferredFrameForContentView:(WMScrollView *)contentView {
-    
-    CGFloat originY = CGRectGetMaxY([self pageController:pageController preferredFrameForMenuView:self.menuView]);
-    
-    return CGRectMake(0, originY, self.view.frame.size.width, self.view.frame.size.height - originY);
+    return childVc;
 }
 
 @end
