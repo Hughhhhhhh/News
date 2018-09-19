@@ -217,7 +217,7 @@
     self.headView.name.text = (NSString *)[NSObject readObjforKey:@"nickname"];
     NSString *headImg = (NSString *)[NSObject readObjforKey:@"avatar"];
     NSURL *url = [NSURL URLWithString:headImg];
-    [self.headView.icon sd_setImageWithURL:url placeholderImage:nil];
+    [self.headView.icon sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"backgroundImage3"]];
 }
 
 - (HgHeadOfMineView *)headView{

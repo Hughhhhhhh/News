@@ -35,10 +35,17 @@
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
 /*****************  屏幕适配  ******************/
-#define iphoneX (([[UIScreen mainScreen] bounds].size.height >= 812)?YES:NO)
+#define iphoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ?\
+(\
+CGSizeEqualToSize(CGSizeMake(375, 812),[UIScreen mainScreen].bounds.size)\
+||\
+CGSizeEqualToSize(CGSizeMake(414, 896),[UIScreen mainScreen].bounds.size)\
+)\
+:\
+NO)
 
 //导航栏的高度
-#define NaviBarHeight  iphoneX ? 88 : 64
+#define NaviBarHeight  (iphoneX ? 88 : 64 )
 //状态栏 的高度
 #define kTopMargin (iphoneX ? 24 : 0)
 #define kBottomMargin (iphoneX ? 34 : 0)

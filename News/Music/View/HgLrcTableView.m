@@ -61,9 +61,9 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     if (_currentRow == indexPath.row) {
-        cell.textLabel.textColor = [UIColor redColor];
-    }else{
         cell.textLabel.textColor = [UIColor whiteColor];
+    }else{
+        cell.textLabel.textColor = [UIColor lightGrayColor];
     }
     
     return cell;
@@ -81,7 +81,7 @@
         
         // 首先处理歌词中无用的东西
         // [ti:][ar:][al:]这类的直接跳过
-        if ([line containsString:@"[0"] || [line containsString:@"[1"] || [line containsString:@"[2"] || [line containsString:@"[3"]) {
+        if ([line containsString:@"[0"] || [line containsString:@"[1"] || [line containsString:@"[2"] || [line containsString:@"[3"] || [line containsString:@"[4"] || [line containsString:@"[5"]) {
             NSArray *lineArr = [line componentsSeparatedByString:@"]"];
             NSString *str1 = [line substringWithRange:NSMakeRange(3, 1)];
             NSString *str2 = [line substringWithRange:NSMakeRange(6, 1)];
@@ -95,6 +95,22 @@
         } else {
             continue;
         }
+        
+    }
+    if (HgSongInfo.shared.mTimeArray.count <= 0) {
+        contentStr = @"[00:00.00]获取歌词出错!";
+        
+        NSArray *lineArr = [contentStr componentsSeparatedByString:@"]"];
+        NSString *str1 = [contentStr substringWithRange:NSMakeRange(3, 1)];
+        NSString *str2 = [contentStr substringWithRange:NSMakeRange(6, 1)];
+        
+        if ([str1 isEqualToString:@":"] && [str2 isEqualToString:@"."]) {
+            NSString *lrcStr = lineArr[1];
+            NSString *timeStr = [lineArr[0] substringWithRange:NSMakeRange(1, 5)];
+            [HgSongInfo.shared.mLRCDictinary setObject:lrcStr forKey:timeStr];
+            [HgSongInfo.shared.mTimeArray addObject:timeStr];
+        }
+        
     }
     [self.tableView reloadData];
     

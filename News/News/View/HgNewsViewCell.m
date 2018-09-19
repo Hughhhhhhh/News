@@ -45,11 +45,11 @@
 -(void) settingData{
     HgNews *model = self.news;
     
-    NSString *img = model.icon;
+    NSString *img = model.imgsrc;
     NSURL *url = [NSURL URLWithString:img];
-    [self.image sd_setImageWithURL:url placeholderImage:nil];
-    self.title.text = model.title;
-    self.desc.text = model.desc;
+    [self.image sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"backgroundImage3"]];
+    self.title.text = model.ltitle;
+    self.desc.text = model.digest;
     
     self.bgView.layer.shadowColor = [UIColor blackColor].CGColor;
     self.bgView.layer.shadowOpacity = 0.2;
@@ -58,7 +58,7 @@
     self.name.text = (NSString *)[NSObject readObjforKey:@"nickname"];
     NSString *headImg = (NSString *)[NSObject readObjforKey:@"avatar"];
     NSURL *url2 = [NSURL URLWithString:headImg];
-    [self.iconimage sd_setImageWithURL:url2 placeholderImage:nil];
+    [self.iconimage sd_setImageWithURL:url2 placeholderImage:[UIImage imageNamed:@"backgroundImage3"]];
     self.iconimage.layer.masksToBounds = YES;
     self.iconimage.layer.cornerRadius = self.iconimage.bounds.size.width * 0.5;
     

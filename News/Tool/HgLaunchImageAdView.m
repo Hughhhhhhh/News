@@ -124,7 +124,7 @@
 -(void)setImgUrl:(NSString *)imgUrl{
     _imgUrl = imgUrl;
     if ([self isImgCache] == nil) {
-        [_aDImgView sd_setImageWithURL:[NSURL URLWithString:_imgUrl] placeholderImage:nil];
+        [_aDImgView sd_setImageWithURL:[NSURL URLWithString:_imgUrl] placeholderImage:[UIImage imageNamed:@"backgroundImage3"]];
     }
     [NSObject saveObj:_imgUrl withKey:IMGURL];
 }
@@ -172,7 +172,7 @@
     opacityAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     [self.aDImgView.layer addAnimation:opacityAnimation forKey:@"animateOpacity"];
     if ([self isImgCache].length > 0) {
-        [_aDImgView sd_setImageWithURL:[NSURL URLWithString:[self isImgCache]] placeholderImage:nil];
+        [_aDImgView sd_setImageWithURL:[NSURL URLWithString:[self isImgCache]] placeholderImage:[UIImage imageNamed:@"backgroundImage3"]];
     }
     
     countDownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimer) userInfo:nil repeats:YES];

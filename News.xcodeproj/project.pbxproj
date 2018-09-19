@@ -138,6 +138,7 @@
 		84707CC2212D900F009C1B95 /* MBProgressHUD+Hg.m in Sources */ = {isa = PBXBuildFile; fileRef = 84707CC1212D900F009C1B95 /* MBProgressHUD+Hg.m */; };
 		847D4CC6212AE0DE006450BC /* HgMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D4CC5212AE0DE006450BC /* HgMusicViewController.m */; };
 		847D4CC9212AE0EC006450BC /* HgVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D4CC8212AE0EC006450BC /* HgVideoViewController.m */; };
+		84B76D582151F11100BF84BD /* HgNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B76D572151F11100BF84BD /* HgNewsDetailViewController.m */; };
 		ADF0B0EB16E795A9BA89A49E /* libPods-News.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA5678F3C02B00B53ADF589 /* libPods-News.a */; };
 /* End PBXBuildFile section */
 
@@ -401,6 +402,8 @@
 		847D4CC5212AE0DE006450BC /* HgMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgMusicViewController.m; sourceTree = "<group>"; };
 		847D4CC7212AE0EC006450BC /* HgVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgVideoViewController.h; sourceTree = "<group>"; };
 		847D4CC8212AE0EC006450BC /* HgVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgVideoViewController.m; sourceTree = "<group>"; };
+		84B76D562151F11100BF84BD /* HgNewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgNewsDetailViewController.h; sourceTree = "<group>"; };
+		84B76D572151F11100BF84BD /* HgNewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgNewsDetailViewController.m; sourceTree = "<group>"; };
 		C6A3BA08099FFA23A92CF085 /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
 		FE2BF594B7C39255941CC1A3 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -661,6 +664,8 @@
 				842E2E0621301F4700C795C6 /* HgHeadlinesViewController.m */,
 				39783B2A202AE0C200A6798B /* HgNewsViewController.h */,
 				39783B2B202AE0C200A6798B /* HgNewsViewController.m */,
+				84B76D562151F11100BF84BD /* HgNewsDetailViewController.h */,
+				84B76D572151F11100BF84BD /* HgNewsDetailViewController.m */,
 				3990A0E9202D7F2800B4D681 /* HgNewsUserViewController.h */,
 				3990A0EA202D7F2800B4D681 /* HgNewsUserViewController.m */,
 				3990A0EB202D7F2800B4D681 /* HgNewsUserViewController.xib */,
@@ -1231,6 +1236,7 @@
 				39B8372A2046A1A100BA13FB /* MJRefreshBackStateFooter.m in Sources */,
 				39783B19202A9A0F00A6798B /* HgItemModel.m in Sources */,
 				3982F9C2209C55E000E7EE99 /* FLAnimatedImageView+WebCache.m in Sources */,
+				84B76D582151F11100BF84BD /* HgNewsDetailViewController.m in Sources */,
 				39B8372D2046A1A100BA13FB /* MJRefreshStateHeader.m in Sources */,
 				39783B13202A9A0F00A6798B /* HgTabBar.m in Sources */,
 				39B837232046A1A100BA13FB /* MJRefreshFooter.m in Sources */,

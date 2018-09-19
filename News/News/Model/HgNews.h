@@ -17,6 +17,14 @@
 
 @property (nonatomic, copy) NSString * title;
 
+@property (nonatomic, copy) NSString * digest;
+
+@property (nonatomic, copy) NSString * imgsrc;
+
+@property (nonatomic, copy) NSString * ltitle;
+
+@property (nonatomic, copy) NSString * url_3w;
+
 - (instancetype)initWithDict:(NSDictionary *)dict;
 
 + (void)requestData:(NSString *)num success:(void (^)(NSArray *group))success;

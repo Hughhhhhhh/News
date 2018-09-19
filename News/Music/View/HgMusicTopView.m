@@ -38,7 +38,7 @@
         self.songTitleLabel.scrollTitleColor = [UIColor whiteColor];
         self.songTitleLabel.scrollVelocity = 5.0;
         
-        self.singerNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, frame.size.height / 2 - 20, frame.size.width - 20, frame.size.height / 2 - 30)];
+        self.singerNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, frame.size.height / 2 - 15, frame.size.width - 20, frame.size.height / 2 - 30)];
         [self.singerNameLabel setFont:[UIFont systemFontOfSize:15.0]];
         [self.singerNameLabel setTextColor:[UIColor whiteColor]];
         [self.singerNameLabel setText:@""];

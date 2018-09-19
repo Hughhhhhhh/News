@@ -20,6 +20,8 @@
 @property (nonatomic,strong) NSString *file_duration;
 @property (assign , nonatomic) BOOL isPlay;
 
+
+
 - (instancetype) initWithDict:(NSDictionary *)dict;
 
 @end

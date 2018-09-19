@@ -51,13 +51,13 @@
 }
 
 -(void)playSongSetting{
-    dispatch_async(dispatch_get_main_queue(), ^{
-
-        [self.detailController.midView.midLrcView.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
-
-    });
-
-    [self.detailController.midView.midLrcView.tableView reloadData];
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//
+//        [self.detailController.midView.midLrcView.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+//
+//    });
+//
+//    [self.detailController.midView.midLrcView.tableView reloadData];
     
     if (self.playerTimeObserver != nil) {
         

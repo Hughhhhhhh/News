@@ -40,6 +40,21 @@ static AFHTTPSessionManager *manager = nil;
     }];
 }
 
++ (void)getNotMainURL:(NSString *)subURL parameters:(NSDictionary *)parameters completionHandler:(void (^)(id responseObject))complete {
+    
+    NSString *mainUrl=[NSString stringWithFormat:@"%@",subURL];
+    [[self sharedManager] GET:mainUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (complete) {
+            complete(responseObject);
+        }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if(complete)
+            complete(nil);
+    }];
+}
+
 + (void)getMusicURL:(NSString *)subURL parameters:(NSDictionary *)parameters completionHandler:(void (^)(id responseObject))complete {
     
     NSString *url = [HgMusicMainURL stringByAppendingString:subURL];

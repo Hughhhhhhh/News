@@ -13,10 +13,10 @@
 
 - (instancetype)initWithDict:(NSDictionary *)dict{
     if (self = [super init]) {
-//        [self setValuesForKeysWithDictionary:dict];
-        self.icon = dict[@"image"];
-        self.title = dict[@"title"];
-        self.desc = dict[@"desc"];
+        [self setValuesForKeysWithDictionary:dict];
+//        self.icon = dict[@"image"];
+//        self.title = dict[@"title"];
+//        self.desc = dict[@"desc"];
     }
     return self;
 }
@@ -40,6 +40,29 @@
             success(arrayM.copy);
         }
     }];
+}
+
+- (id)valueForUndefinedKey:(NSString *)key
+{
+    return nil;
+}
+
+- (void)setValue:(id)value forKey:(NSString *)key
+{
+    if ([key isEqualToString:@"id"]) {
+        [self setValue:value forKey:@"idNum"];
+        
+    }
+    else
+    {
+        [super setValue:value forKey:key];
+    }
+    
+}
+
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    
 }
 
 @end

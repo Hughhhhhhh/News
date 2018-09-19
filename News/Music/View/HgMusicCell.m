@@ -48,7 +48,7 @@
     _model = model;
     self.title.text = model.title;
     self.author.text = model.author;
-    [self.imgView sd_setImageWithURL:[NSURL URLWithString:model.pic_big] placeholderImage:nil];
+    [self.imgView sd_setImageWithURL:[NSURL URLWithString:model.pic_big] placeholderImage:[UIImage imageNamed:@"backgroundImage3"]];
     if (model.isPlay == YES) {
         self.playView.hidden = NO;
     }else{

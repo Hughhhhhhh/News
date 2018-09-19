@@ -19,4 +19,12 @@
     }];
 }
 
++(void)getWangYiNewsListBlock:(void (^)(id responseData))complete{
+    [self getNotMainURL:@"http://c.m.163.com/nc/article/headline/T1348647853363/0-140.html" parameters:nil completionHandler:^(id responseObject) {
+        if (complete) {
+            complete([self resultAllData:responseObject]);
+        }
+    }];
+}
+
 @end

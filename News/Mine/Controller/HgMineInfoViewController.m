@@ -53,7 +53,7 @@
             cell.title.text = @"我的头像";
             NSString *headImg = (NSString *)[NSObject readObjforKey:@"avatar"];
             NSURL *url = [NSURL URLWithString:headImg];
-            [cell.icon sd_setImageWithURL:url placeholderImage:nil];
+            [cell.icon sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"backgroundImage3"]];
             
         }else if(indexPath.row == 1){
             cell = [tableView dequeueReusableCellWithIdentifier:@"informationCell2"];

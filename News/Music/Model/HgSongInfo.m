@@ -65,7 +65,6 @@ Create_Singleton_Imp(HgSongInfo)
         NSLog(@"歌词不存在！");
         self.lrcString = @"[00:00.00]歌词不存在！";
     }
-    
 }
 
 #pragma mark - int转NSString

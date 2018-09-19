@@ -52,7 +52,7 @@
     self.name.text = (NSString *)[NSObject readObjforKey:@"nickname"];
     NSString *headImg = (NSString *)[NSObject readObjforKey:@"avatar"];
     NSURL *url = [NSURL URLWithString:headImg];
-    [self.icon sd_setImageWithURL:url placeholderImage:nil];
+    [self.icon sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"backgroundImage3"]];
     self.icon.layer.masksToBounds = YES;
     self.icon.layer.cornerRadius = self.icon.bounds.size.width * 0.5;
 }

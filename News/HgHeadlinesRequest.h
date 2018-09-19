@@ -17,4 +17,6 @@
  */
 +(void)getNewsListWithPage:(NSString *)page block:(void (^)(NSString * msg,id responseData))complete;
 
++(void)getWangYiNewsListBlock:(void (^)(id responseData))complete;
+
 @end

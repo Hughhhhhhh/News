@@ -308,7 +308,7 @@
 }
 
 -(void)creatUI{
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREENW, SCREENH -64 -45 -45 ) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREENW, SCREENH -NaviBarHeight -44 -45 - kBottomMargin ) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView setSeparatorColor:[UIColor clearColor]];

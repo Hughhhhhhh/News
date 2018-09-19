@@ -89,7 +89,7 @@ int lrcIndex = 0;
 }
 
 -(void)refreshBgImage:(NSString *)image{
-    [_backgroundImageView sd_setImageWithURL:[NSURL URLWithString:image] placeholderImage:nil];
+    [_backgroundImageView sd_setImageWithURL:[NSURL URLWithString:image] placeholderImage:[UIImage imageNamed:@"backgroundImage3"]];
 }
 
 - (void)viewDidLoad {

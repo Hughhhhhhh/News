@@ -10,4 +10,11 @@
 
 @interface HgBaseViewController : UIViewController
 
+- (void)createProgress;
+
+- (void)showProgress;
+
+- (void)hideProgress;
+
+
 @end
