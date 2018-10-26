@@ -21,10 +21,6 @@
 
 @property (strong , nonatomic) NSIndexPath * oldIndexPath;
 
-//锁屏图片视图,用来绘制带歌词的image
-@property (nonatomic, strong) UIImageView * lrcImageView;
-@property (nonatomic, strong) UIImage * lastImage;//最后一次锁屏之后的歌词海报
-
 @end
 
 @implementation HgMusicListViewController
@@ -61,7 +57,9 @@
     HgMusicInfoModel * oldmodel = self.arrayList[self.oldIndexPath.row];
     oldmodel.isPlay = NO;
     HgMusicInfoModel * model = self.arrayList[num];
-    model.isPlay = YES;
+    if ([model.title isEqualToString:HgSongInfo.shared.title]) {
+        model.isPlay = YES;
+    }
     NSIndexPath * indexPath = [NSIndexPath indexPathForRow:num inSection:0];
     self.oldIndexPath = [NSIndexPath indexPathForRow:[change[@"old"] integerValue] inSection:0];
     [self.tableView reloadRowsAtIndexPaths:@[indexPath,self.oldIndexPath] withRowAnimation:UITableViewRowAnimationNone];
@@ -128,7 +126,12 @@
                 [sself.arrayList addObject:model];
             }
             HgSongInfo.shared.isDataRequestFinish = YES;
-            HgSongInfo.shared.OMSongs = self.arrayList;
+            
+            if (sself.oldIndexPath) {
+                HgMusicInfoModel * model = sself.arrayList[sself.oldIndexPath.row];
+                model.isPlay = YES;
+            }
+            
             [sself.tableView reloadData];
         }else{
             [MBProgressHUD showHUDMsg:@"网络错误~"];
@@ -163,6 +166,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    HgSongInfo.shared.OMSongs = self.arrayList;
     HgMusicInfoModel * model = self.arrayList[indexPath.row];
     model.isPlay = YES;
     if (self.oldIndexPath) {
@@ -190,43 +194,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - 歌曲播放结束操作
--(void) finishedPlaying {
-    
-    NSLog(@"本歌曲播放结束，准备播放下一首歌曲！");
-    NSLog(@"%@",self.oldIndexPath);
-    [self nextButtonAction:nil];
-}
-
-#pragma mark - 下一曲
--(void) nextButtonAction: (UIButton *)sender {
-    
-    HgSongInfo.shared.lrcIndex = 0;
-    NSIndexPath * indexPath = self.oldIndexPath;
-    HgMusicInfoModel * oldmodel = self.arrayList[indexPath.row];
-    oldmodel.isPlay = NO;
-    if (HgSongInfo.shared.playSongIndex < HgSongInfo.shared.OMSongs.count - 1) {
-        HgMusicInfoModel *info = HgSongInfo.shared.OMSongs[HgSongInfo.shared.playSongIndex + 1];
-        NSLog(@"即将播放下一首歌曲: 《%@》", info.title);
-        [HgSongInfo.shared setSongInfo:info];
-        [HgSongInfo.shared getSelectedSong:info.song_id index:HgSongInfo.shared.playSongIndex + 1];
-        
-        self.oldIndexPath = [NSIndexPath indexPathForRow:indexPath.row + 1 inSection:indexPath.section];
-        HgMusicInfoModel * model = self.arrayList[self.oldIndexPath.row];
-        model.isPlay = YES;
-        
-    } else {
-        HgMusicInfoModel *info = HgSongInfo.shared.OMSongs[0];
-        NSLog(@"即将播放下一首歌曲: 《%@》", info.title);
-        [HgSongInfo.shared setSongInfo:info];
-        [HgSongInfo.shared getSelectedSong:info.song_id index:0];
-        self.oldIndexPath = [NSIndexPath indexPathForRow:0 inSection:indexPath.section];
-        HgMusicInfoModel * model = self.arrayList[self.oldIndexPath.row];
-        model.isPlay = YES;
-    }
-    [self.tableView reloadRowsAtIndexPaths:@[indexPath,self.oldIndexPath] withRowAnimation:UITableViewRowAnimationNone];
 }
 
 -(NSMutableArray *)arrayList{

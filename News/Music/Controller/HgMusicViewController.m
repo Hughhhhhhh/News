@@ -36,6 +36,12 @@
      |NSKeyValueObservingOptionNew context:nil];
     [HgSongInfo.shared addObserver:self forKeyPath:@"isDataRequestFinish" options:NSKeyValueObservingOptionOld
      |NSKeyValueObservingOptionNew context:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver: self
+                                             selector: @selector(playSongSetting)
+                                                 name: @"repeatPlay"
+                                               object: nil];
+    
     // 锁屏播放设置
     [self createRemoteCommandCenter];
 }

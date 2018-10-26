@@ -958,8 +958,6 @@
 		84707C9F212D8822009C1B95 /* MusicPlayMangaer */ = {
 			isa = PBXGroup;
 			children = (
-				84707CA3212D8879009C1B95 /* HgMusicPlayerManager.h */,
-				84707CA4212D8879009C1B95 /* HgMusicPlayerManager.m */,
 			);
 			path = MusicPlayMangaer;
 			sourceTree = "<group>";
@@ -1013,6 +1011,8 @@
 		847D4CBF212AE07C006450BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84707CA3212D8879009C1B95 /* HgMusicPlayerManager.h */,
+				84707CA4212D8879009C1B95 /* HgMusicPlayerManager.m */,
 				8405DD442148E5A100070E59 /* HgMusicInfoModel.h */,
 				8405DD452148E5A100070E59 /* HgMusicInfoModel.m */,
 				8405DD4F2149046100070E59 /* HgSongInfo.h */,
@@ -1399,7 +1399,7 @@
 				INFOPLIST_FILE = News/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Xbul.xbullschool.News;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hugh.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "News/News-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1425,7 +1425,7 @@
 				INFOPLIST_FILE = News/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Xbul.xbullschool.News;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hugh.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "News/News-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

@@ -102,8 +102,8 @@ int lrcIndex = 0;
 #pragma - mark 获取保存的播放模式
 - (void)getShuffleAndRepeatState
 {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSNumber *repeatAndShuffleNumber = [defaults objectForKey:@"SHFFLEANDREPEATSTATE"];
+
+    NSNumber *repeatAndShuffleNumber = (NSNumber *)[NSObject readObjforKey:@"SHFFLEANDREPEATSTATE"];
     if (repeatAndShuffleNumber == nil)
     {
         HgMusicPlayerManager.shared.shuffleAndRepeatState = RepeatPlayMode;
@@ -165,6 +165,43 @@ int lrcIndex = 0;
 
 #pragma - mark 下一曲
 -(void) nextButtonAction {
+    HgMusicPlayerManager.shared.playingIndex = HgSongInfo.shared.playSongIndex;
+    switch (HgMusicPlayerManager.shared.shuffleAndRepeatState) {
+        case RepeatPlayMode:
+        {
+            HgMusicPlayerManager.shared.playingIndex ++ ;
+            if (HgMusicPlayerManager.shared.playingIndex >= HgSongInfo.shared.OMSongs.count) {
+                HgMusicPlayerManager.shared.playingIndex = 0 ;
+            }
+        }
+            break;
+        case RepeatOnlyOnePlayMode:
+        {
+            
+        }
+            break;
+        case ShufflePlayMode:
+        {
+            if (HgMusicPlayerManager.shared.playingIndex == HgSongInfo.shared.OMSongs.count - 1) {
+                HgMusicPlayerManager.shared.playingIndex = [self getRandomNumber:0 with:(HgSongInfo.shared.OMSongs.count - 2)];
+            }else{
+                HgMusicPlayerManager.shared.playingIndex = [self getRandomNumber:(HgMusicPlayerManager.shared.playingIndex + 1) with:(HgSongInfo.shared.OMSongs.count - 1)];
+            }
+        }
+            break;
+            
+        default:
+            break;
+    }
+    if (HgMusicPlayerManager.shared.playingIndex != HgSongInfo.shared.playSongIndex) {
+        if (HgMusicPlayerManager.shared.playingIndex < HgSongInfo.shared.OMSongs.count) {
+            HgMusicInfoModel * model = HgSongInfo.shared.OMSongs[HgMusicPlayerManager.shared.playingIndex + 1];
+            [HgSongInfo.shared setSongInfo:model];
+            [HgSongInfo.shared getSelectedSong:model.song_id index:HgSongInfo.shared.playSongIndex + 1];
+        }
+    }else{
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"repeatPlay" object:self];
+    }
 }
 
 #pragma - mark 上一曲
@@ -204,7 +241,7 @@ int lrcIndex = 0;
             break;
     }
     
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:HgMusicPlayerManager.shared.shuffleAndRepeatState] forKey:@"SHFFLEANDREPEATSTATE"];//存储路径
+    [NSObject saveObj:[NSNumber numberWithInteger:HgMusicPlayerManager.shared.shuffleAndRepeatState] withKey:@"SHFFLEANDREPEATSTATE"];//存储路径
 }
 
 #pragma - mark 歌曲列表
@@ -283,6 +320,13 @@ int lrcIndex = 0;
             index = index + 1;
         }
     }
+}
+
+#pragma - mark 获取随机数 用于随机播放
+-(NSUInteger) getRandomNumber:(NSUInteger)from with:(NSUInteger)to//包括两边边界
+{
+    NSUInteger res =  from + (arc4random() % (to - from + 1));
+    return res;
 }
 
 @end
